@@ -1,1 +1,0 @@
-gratacels.exe -m g5_7.txt
