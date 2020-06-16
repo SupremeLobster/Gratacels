@@ -1,7 +1,7 @@
 # Gratacels
 *** Distribució de gratacels en una illa d'edificis quadrada ***
 
-Utilització: ./gratacels opcio fitxer
+Utilització: ./gratacels.exe opcio fitxer
 
 
 opcio pot ser:
@@ -27,3 +27,5 @@ fitxer        ha de ser un fitxer de text amb totes les dades amb el format seg�
               altura maxima(m) // altura màxima disponible
               
               a1 a2 ... am // edificis disponibles de cada altura
+              
+Al directori arrel d'aquest repositori deixem uns fitxers de text d'exemple de dades d'entrada. Són els fitxers anomentats "gN_V.txt", on la N correspon a la mida de la matriu d'aquest fitxer, i la V correspon al número de fitxer (per diferenciar entre fitxers que contenen matrius diferents però de la mateixa).
