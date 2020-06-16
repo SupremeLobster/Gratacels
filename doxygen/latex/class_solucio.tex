@@ -1,0 +1,529 @@
+\hypertarget{class_solucio}{}\doxysection{Solucio Class Reference}
+\label{class_solucio}\index{Solucio@{Solucio}}
+
+
+{\ttfamily \#include $<$Solucio.\+h$>$}
+
+
+
+Collaboration diagram for Solucio\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucio__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solucio_a83a8a2881f78b7e406761e532d23f2a6}{Solucio}} ()
+\item 
+\mbox{\hyperlink{class_solucio_a1eec4b2e9df961351c665ee42e72bb89}{Solucio}} (ifstream \&fin, int alcada\+\_\+max, bool trobar\+Millor)
+\item 
+void \mbox{\hyperlink{class_solucio_abe2cb23b9cf6c471aeb17f44a774eec1}{anotar\+Candidat}} (const \mbox{\hyperlink{class_candidats}{Candidats}} \&i\+Can)
+\item 
+void \mbox{\hyperlink{class_solucio_af2170a9a52a0fe028b149fa6b4e25c22}{desanotar\+Candidat}} (const \mbox{\hyperlink{class_candidats}{Candidats}} \&i\+Can)
+\item 
+\mbox{\hyperlink{class_candidats}{Candidats}} \mbox{\hyperlink{class_solucio_a00e64a357a95d6645d4309d71513a380}{inicialitzar\+Candidats}} () const
+\item 
+bool \mbox{\hyperlink{class_solucio_a4c18908503c0586d568dab5afbe2171b}{pot\+Ser\+Millor}} (const \mbox{\hyperlink{class_solucio}{Solucio}} \&opt) const
+\item 
+bool \mbox{\hyperlink{class_solucio_a2e6647a2cb565459198b2980a388d53f}{es\+Millor}} (const \mbox{\hyperlink{class_solucio}{Solucio}} \&opt) const
+\item 
+bool \mbox{\hyperlink{class_solucio_aace918db9fa56850d988113b24c6cd68}{acceptable}} (const \mbox{\hyperlink{class_candidats}{Candidats}} \&i\+Can) const
+\item 
+bool \mbox{\hyperlink{class_solucio_adf12823d6437ac4bb638c9f27caf1078}{completa}} () const
+\item 
+void \mbox{\hyperlink{class_solucio_aceda78a3c2cfee7f456c8d10e80a3e49}{mostrar}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_solucio_ae368c9ae97f900cef03c64269a422f12}{calcular\+Matriu\+Sumes}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_solucio_ac6ca6e24b91e41bd6c3c13426be0335c}{nivell}}
+\item 
+int \mbox{\hyperlink{class_solucio_ac32e805fb030ca867d01691e41f15f53}{a\+Max}}
+\item 
+int \mbox{\hyperlink{class_solucio_a51bdf126d3d8c0c1aa67b775585ee1f8}{mida}}
+\item 
+int \mbox{\hyperlink{class_solucio_a72776ca31f9452f498ef0f527a19c631}{alcada\+\_\+total}}
+\item 
+vector$<$ vector$<$ bool $>$ $>$ \mbox{\hyperlink{class_solucio_a47bcb20085c64b131dcd518442edd00c}{a\+Files}}
+\item 
+vector$<$ vector$<$ bool $>$ $>$ \mbox{\hyperlink{class_solucio_a8723b0d2138931692e4e9fd446d9734c}{a\+Columnes}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_solucio_a4d080ec896837ac9a5effa626ea92d3f}{alcades}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_solucio_aacb93dc73ad1e901abaee0817c346937}{sol}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_solucio_a9d7761f6356ce599505998e68527d9c4}{vN}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_solucio_a1a794255731d93873b4c088726d0bb22}{vS}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_solucio_a6200c1bddbbd617d688519a939747f5b}{vE}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_solucio_a24cafe02e20753b31d64b535276dd22e}{vW}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_solucio_a02da702f0ee1de189cb085d14313ed80}{mat\+Sumes}}
+\item 
+vector$<$ pair$<$ int, vector$<$ int $>$ $>$ $>$ \mbox{\hyperlink{class_solucio_a5f5be83b0c9ef561d719a933ba570431}{vista\+\_\+N}}
+\item 
+vector$<$ pair$<$ int, vector$<$ int $>$ $>$ $>$ \mbox{\hyperlink{class_solucio_a2b5c72740322d922baf38ff3a915057d}{vista\+\_\+W}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Permet gestionar la solució del problema. 
+
+Definition at line 18 of file Solucio.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_solucio_a83a8a2881f78b7e406761e532d23f2a6}\label{class_solucio_a83a8a2881f78b7e406761e532d23f2a6}} 
+\index{Solucio@{Solucio}!Solucio@{Solucio}}
+\index{Solucio@{Solucio}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{Solucio()}{Solucio()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Solucio\+::\+Solucio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha creat una solució buida. 
+\end{DoxyPostcond}
+
+
+Definition at line 7 of file Solucio.\+cpp.
+
+\mbox{\Hypertarget{class_solucio_a1eec4b2e9df961351c665ee42e72bb89}\label{class_solucio_a1eec4b2e9df961351c665ee42e72bb89}} 
+\index{Solucio@{Solucio}!Solucio@{Solucio}}
+\index{Solucio@{Solucio}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{Solucio()}{Solucio()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Solucio\+::\+Solucio (\begin{DoxyParamCaption}\item[{ifstream \&}]{fin,  }\item[{int}]{alcada\+\_\+max,  }\item[{bool}]{trobar\+Millor }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em fin} & És el fitxer d\textquotesingle{}entrada a partir del qual es crea la solució inicial. \\
+\hline
+{\em alcada\+\_\+max} & Indica l\textquotesingle{}edifici més alt que podrem utilitzar en aquesta solució. \\
+\hline
+{\em trobar\+Millor} & Indica si s\textquotesingle{}ha de preparar la solució per trobar millor solució. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha creat una solució inicial a partir del fitxer \textquotesingle{}fin\textquotesingle{} i els paràmetres \textquotesingle{}alcada\+\_\+max\textquotesingle{} i \textquotesingle{}trobar\+Millor\textquotesingle{}. 
+\end{DoxyPostcond}
+
+
+Definition at line 9 of file Solucio.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_solucio_a1eec4b2e9df961351c665ee42e72bb89_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solucio_aace918db9fa56850d988113b24c6cd68}\label{class_solucio_aace918db9fa56850d988113b24c6cd68}} 
+\index{Solucio@{Solucio}!acceptable@{acceptable}}
+\index{acceptable@{acceptable}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{acceptable()}{acceptable()}}
+{\footnotesize\ttfamily bool Solucio\+::acceptable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_candidats}{Candidats}} \&}]{i\+Can }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Diu si el candidat \textquotesingle{}i\+Can\textquotesingle{} es pot afegir a aquesta solució. 
+\end{DoxyPostcond}
+
+
+Definition at line 132 of file Solucio.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_solucio_aace918db9fa56850d988113b24c6cd68_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucio_aace918db9fa56850d988113b24c6cd68_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucio_abe2cb23b9cf6c471aeb17f44a774eec1}\label{class_solucio_abe2cb23b9cf6c471aeb17f44a774eec1}} 
+\index{Solucio@{Solucio}!anotarCandidat@{anotarCandidat}}
+\index{anotarCandidat@{anotarCandidat}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{anotarCandidat()}{anotarCandidat()}}
+{\footnotesize\ttfamily void Solucio\+::anotar\+Candidat (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_candidats}{Candidats}} \&}]{i\+Can }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+\textquotesingle{}i\+Can\textquotesingle{} és acceptable. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ha anotat el candidat \textquotesingle{}i\+Can\textquotesingle{} a la solució. 
+\end{DoxyPostcond}
+
+
+Definition at line 65 of file Solucio.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_solucio_abe2cb23b9cf6c471aeb17f44a774eec1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucio_abe2cb23b9cf6c471aeb17f44a774eec1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucio_ae368c9ae97f900cef03c64269a422f12}\label{class_solucio_ae368c9ae97f900cef03c64269a422f12}} 
+\index{Solucio@{Solucio}!calcularMatriuSumes@{calcularMatriuSumes}}
+\index{calcularMatriuSumes@{calcularMatriuSumes}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{calcularMatriuSumes()}{calcularMatriuSumes()}}
+{\footnotesize\ttfamily void Solucio\+::calcular\+Matriu\+Sumes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondition}
+S\textquotesingle{}acaben d\textquotesingle{}inicialitzar tots els atributs d\textquotesingle{}aquesta solució. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha calculat el vector \textquotesingle{}mat\+Sumes\textquotesingle{} (que es tracta com una matriu de mida$\ast$mida). S\textquotesingle{}ha calculat tenint en compte que no hi hagi repeticions d\textquotesingle{}alçades en fila i columna. 
+\end{DoxyPostcond}
+
+
+Definition at line 207 of file Solucio.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_solucio_ae368c9ae97f900cef03c64269a422f12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucio_adf12823d6437ac4bb638c9f27caf1078}\label{class_solucio_adf12823d6437ac4bb638c9f27caf1078}} 
+\index{Solucio@{Solucio}!completa@{completa}}
+\index{completa@{completa}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{completa()}{completa()}}
+{\footnotesize\ttfamily bool Solucio\+::completa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Diu si aquesta solució és completa. 
+\end{DoxyPostcond}
+
+
+Definition at line 189 of file Solucio.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucio_adf12823d6437ac4bb638c9f27caf1078_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucio_af2170a9a52a0fe028b149fa6b4e25c22}\label{class_solucio_af2170a9a52a0fe028b149fa6b4e25c22}} 
+\index{Solucio@{Solucio}!desanotarCandidat@{desanotarCandidat}}
+\index{desanotarCandidat@{desanotarCandidat}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{desanotarCandidat()}{desanotarCandidat()}}
+{\footnotesize\ttfamily void Solucio\+::desanotar\+Candidat (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_candidats}{Candidats}} \&}]{i\+Can }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+\textquotesingle{}i\+Can\textquotesingle{} és el darrer candidat anotat. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ha desanotat \textquotesingle{}i\+Can\textquotesingle{} de la solució (l\textquotesingle{}últim candidat que s\textquotesingle{}havia anotat). 
+\end{DoxyPostcond}
+
+
+Definition at line 91 of file Solucio.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_solucio_af2170a9a52a0fe028b149fa6b4e25c22_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucio_af2170a9a52a0fe028b149fa6b4e25c22_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucio_a2e6647a2cb565459198b2980a388d53f}\label{class_solucio_a2e6647a2cb565459198b2980a388d53f}} 
+\index{Solucio@{Solucio}!esMillor@{esMillor}}
+\index{esMillor@{esMillor}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{esMillor()}{esMillor()}}
+{\footnotesize\ttfamily bool Solucio\+::es\+Millor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_solucio}{Solucio}} \&}]{opt }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+Aquesta solució és completa i \textquotesingle{}opt\textquotesingle{} també ho és. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Diu si aquesta solució és millor que la solució \textquotesingle{}opt\textquotesingle{}. 
+\end{DoxyPostcond}
+
+
+Definition at line 127 of file Solucio.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucio_a2e6647a2cb565459198b2980a388d53f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucio_a00e64a357a95d6645d4309d71513a380}\label{class_solucio_a00e64a357a95d6645d4309d71513a380}} 
+\index{Solucio@{Solucio}!inicialitzarCandidats@{inicialitzarCandidats}}
+\index{inicialitzarCandidats@{inicialitzarCandidats}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{inicialitzarCandidats()}{inicialitzarCandidats()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_candidats}{Candidats}} Solucio\+::inicialitzar\+Candidats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el conjunt de candidats del nivell actual. 
+\end{DoxyPostcond}
+
+
+Definition at line 117 of file Solucio.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucio_a00e64a357a95d6645d4309d71513a380_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucio_aceda78a3c2cfee7f456c8d10e80a3e49}\label{class_solucio_aceda78a3c2cfee7f456c8d10e80a3e49}} 
+\index{Solucio@{Solucio}!mostrar@{mostrar}}
+\index{mostrar@{mostrar}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{mostrar()}{mostrar()}}
+{\footnotesize\ttfamily void Solucio\+::mostrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ha mostrat aquesta solució per pantalla. 
+\end{DoxyPostcond}
+
+
+Definition at line 194 of file Solucio.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_solucio_aceda78a3c2cfee7f456c8d10e80a3e49_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucio_a4c18908503c0586d568dab5afbe2171b}\label{class_solucio_a4c18908503c0586d568dab5afbe2171b}} 
+\index{Solucio@{Solucio}!potSerMillor@{potSerMillor}}
+\index{potSerMillor@{potSerMillor}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{potSerMillor()}{potSerMillor()}}
+{\footnotesize\ttfamily bool Solucio\+::pot\+Ser\+Millor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_solucio}{Solucio}} \&}]{opt }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+\textquotesingle{}opt\textquotesingle{} és una solució completa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Diu si la cota màxima d\textquotesingle{}aquesta solució parcial podria millorar la solució òptima \textquotesingle{}opt\textquotesingle{}. 
+\end{DoxyPostcond}
+
+
+Definition at line 122 of file Solucio.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucio_a4c18908503c0586d568dab5afbe2171b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_solucio_a8723b0d2138931692e4e9fd446d9734c}\label{class_solucio_a8723b0d2138931692e4e9fd446d9734c}} 
+\index{Solucio@{Solucio}!aColumnes@{aColumnes}}
+\index{aColumnes@{aColumnes}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{aColumnes}{aColumnes}}
+{\footnotesize\ttfamily vector$<$vector$<$bool$>$ $>$ Solucio\+::a\+Columnes\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda quines alçades s\textquotesingle{}han fet servir a cada C\+O\+L\+U\+M\+NA. 
+
+Definition at line 92 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_a47bcb20085c64b131dcd518442edd00c}\label{class_solucio_a47bcb20085c64b131dcd518442edd00c}} 
+\index{Solucio@{Solucio}!aFiles@{aFiles}}
+\index{aFiles@{aFiles}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{aFiles}{aFiles}}
+{\footnotesize\ttfamily vector$<$vector$<$bool$>$ $>$ Solucio\+::a\+Files\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda quines alçades s\textquotesingle{}han fet servir a cada F\+I\+LA. 
+
+Definition at line 92 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_a72776ca31f9452f498ef0f527a19c631}\label{class_solucio_a72776ca31f9452f498ef0f527a19c631}} 
+\index{Solucio@{Solucio}!alcada\_total@{alcada\_total}}
+\index{alcada\_total@{alcada\_total}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{alcada\_total}{alcada\_total}}
+{\footnotesize\ttfamily int Solucio\+::alcada\+\_\+total\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda l\textquotesingle{}alçada total de la solució, que és la suma de les alçades de tots els edificis que hi ha actualment a la solució. 
+
+Definition at line 87 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_a4d080ec896837ac9a5effa626ea92d3f}\label{class_solucio_a4d080ec896837ac9a5effa626ea92d3f}} 
+\index{Solucio@{Solucio}!alcades@{alcades}}
+\index{alcades@{alcades}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{alcades}{alcades}}
+{\footnotesize\ttfamily vector$<$int$>$ Solucio\+::alcades\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda la quantitat d\textquotesingle{}edificis disponibles que hi ha de cada alçada. Inicialment s\textquotesingle{}ha llegit de fitxer. 
+
+Definition at line 95 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_ac32e805fb030ca867d01691e41f15f53}\label{class_solucio_ac32e805fb030ca867d01691e41f15f53}} 
+\index{Solucio@{Solucio}!aMax@{aMax}}
+\index{aMax@{aMax}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{aMax}{aMax}}
+{\footnotesize\ttfamily int Solucio\+::a\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda l\textquotesingle{}alçada màxima d\textquotesingle{}edifici que es podrà fer servir en aquesta solució. 
+
+Definition at line 87 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_a02da702f0ee1de189cb085d14313ed80}\label{class_solucio_a02da702f0ee1de189cb085d14313ed80}} 
+\index{Solucio@{Solucio}!matSumes@{matSumes}}
+\index{matSumes@{matSumes}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{matSumes}{matSumes}}
+{\footnotesize\ttfamily vector$<$int$>$ Solucio\+::mat\+Sumes\hspace{0.3cm}{\ttfamily [private]}}
+
+Es genera durant el constructor, només en el cas que es vulgui preparar per trobar la millor solució. Es guarda en un vector però s\textquotesingle{}interpreta com una matriu de mida$\ast$mida. Permetrà decidir si una solució pot ser millor que una altra. 
+
+Definition at line 95 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_a51bdf126d3d8c0c1aa67b775585ee1f8}\label{class_solucio_a51bdf126d3d8c0c1aa67b775585ee1f8}} 
+\index{Solucio@{Solucio}!mida@{mida}}
+\index{mida@{mida}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{mida}{mida}}
+{\footnotesize\ttfamily int Solucio\+::mida\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda la mida de la solució \mbox{[}mida = núm.\+Columnes = núm.\+Files\mbox{]}. 
+
+Definition at line 87 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_ac6ca6e24b91e41bd6c3c13426be0335c}\label{class_solucio_ac6ca6e24b91e41bd6c3c13426be0335c}} 
+\index{Solucio@{Solucio}!nivell@{nivell}}
+\index{nivell@{nivell}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{nivell}{nivell}}
+{\footnotesize\ttfamily int Solucio\+::nivell\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda el nivell actual de la solució. 
+
+Definition at line 87 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_aacb93dc73ad1e901abaee0817c346937}\label{class_solucio_aacb93dc73ad1e901abaee0817c346937}} 
+\index{Solucio@{Solucio}!sol@{sol}}
+\index{sol@{sol}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{sol}{sol}}
+{\footnotesize\ttfamily vector$<$int$>$ Solucio\+::sol\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda la solució actual (parcial o final). Es guarda en un vector però s\textquotesingle{}interpreta com una matriu de mida$\ast$mida. 
+
+Definition at line 95 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_a6200c1bddbbd617d688519a939747f5b}\label{class_solucio_a6200c1bddbbd617d688519a939747f5b}} 
+\index{Solucio@{Solucio}!vE@{vE}}
+\index{vE@{vE}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{vE}{vE}}
+{\footnotesize\ttfamily vector$<$int$>$ Solucio\+::vE\hspace{0.3cm}{\ttfamily [private]}}
+
+T\+A\+R\+G\+ET. V\+I\+S\+T\+ES DE L\textquotesingle{}E\+ST. Guarda el nombre d\textquotesingle{}edificis que S\textquotesingle{}H\+AN DE V\+E\+U\+RE des de l\textquotesingle{}E\+ST per cada F\+I\+LA. 
+
+Definition at line 95 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_a5f5be83b0c9ef561d719a933ba570431}\label{class_solucio_a5f5be83b0c9ef561d719a933ba570431}} 
+\index{Solucio@{Solucio}!vista\_N@{vista\_N}}
+\index{vista\_N@{vista\_N}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{vista\_N}{vista\_N}}
+{\footnotesize\ttfamily vector$<$ pair$<$int, vector$<$int$>$ $>$ $>$ Solucio\+::vista\+\_\+N\hspace{0.3cm}{\ttfamily [private]}}
+
+P\+A\+R\+C\+I\+AL. Guarda, per cada columna, el nombre d\textquotesingle{}edificis que es veuen A\+C\+T\+U\+A\+L\+M\+E\+NT des del N\+O\+RD (al first del pair) i un vector que es fa servir com a pila que guarda al final de tot l\textquotesingle{}alçada de l\textquotesingle{}edifici més alt que es veu des del N\+O\+RD (al second del pair). 
+
+Definition at line 103 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_a2b5c72740322d922baf38ff3a915057d}\label{class_solucio_a2b5c72740322d922baf38ff3a915057d}} 
+\index{Solucio@{Solucio}!vista\_W@{vista\_W}}
+\index{vista\_W@{vista\_W}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{vista\_W}{vista\_W}}
+{\footnotesize\ttfamily vector$<$ pair$<$int, vector$<$int$>$ $>$ $>$ Solucio\+::vista\+\_\+W\hspace{0.3cm}{\ttfamily [private]}}
+
+P\+A\+R\+C\+I\+AL. Guarda, per cada fila, el nombre d\textquotesingle{}edificis que es veuen A\+C\+T\+U\+A\+L\+M\+E\+NT des de l\textquotesingle{}O\+E\+ST (al first del pair) i un vector que es fa servir com a pila que guarda al final de tot l\textquotesingle{}alçada de l\textquotesingle{}edifici més alt que es veu des de l\textquotesingle{}O\+E\+ST (al second del pair). 
+
+Definition at line 103 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_a9d7761f6356ce599505998e68527d9c4}\label{class_solucio_a9d7761f6356ce599505998e68527d9c4}} 
+\index{Solucio@{Solucio}!vN@{vN}}
+\index{vN@{vN}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{vN}{vN}}
+{\footnotesize\ttfamily vector$<$int$>$ Solucio\+::vN\hspace{0.3cm}{\ttfamily [private]}}
+
+T\+A\+R\+G\+ET. V\+I\+S\+T\+ES D\+EL N\+O\+RD. Guarda el nombre d\textquotesingle{}edificis que S\textquotesingle{}H\+AN DE V\+E\+U\+RE des del N\+O\+RD per cada C\+O\+L\+U\+M\+NA. 
+
+Definition at line 95 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_a1a794255731d93873b4c088726d0bb22}\label{class_solucio_a1a794255731d93873b4c088726d0bb22}} 
+\index{Solucio@{Solucio}!vS@{vS}}
+\index{vS@{vS}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{vS}{vS}}
+{\footnotesize\ttfamily vector$<$int$>$ Solucio\+::vS\hspace{0.3cm}{\ttfamily [private]}}
+
+T\+A\+R\+G\+ET. V\+I\+S\+T\+ES D\+EL S\+UD. Guarda el nombre d\textquotesingle{}edificis que S\textquotesingle{}H\+AN DE V\+E\+U\+RE des del S\+UD per cada C\+O\+L\+U\+M\+NA. 
+
+Definition at line 95 of file Solucio.\+h.
+
+\mbox{\Hypertarget{class_solucio_a24cafe02e20753b31d64b535276dd22e}\label{class_solucio_a24cafe02e20753b31d64b535276dd22e}} 
+\index{Solucio@{Solucio}!vW@{vW}}
+\index{vW@{vW}!Solucio@{Solucio}}
+\doxysubsubsection{\texorpdfstring{vW}{vW}}
+{\footnotesize\ttfamily vector$<$int$>$ Solucio\+::vW\hspace{0.3cm}{\ttfamily [private]}}
+
+T\+A\+R\+G\+ET. V\+I\+S\+T\+ES DE L\textquotesingle{}O\+E\+ST. Guarda el nombre d\textquotesingle{}edificis que S\textquotesingle{}H\+AN DE V\+E\+U\+RE des de l\textquotesingle{}O\+E\+ST per cada F\+I\+LA. 
+
+Definition at line 95 of file Solucio.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_solucio_8h}{Solucio.\+h}}\item 
+\mbox{\hyperlink{_solucio_8cpp}{Solucio.\+cpp}}\end{DoxyCompactItemize}

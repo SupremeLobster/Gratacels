@@ -1,0 +1,2465 @@
+AutoGen Definitions dummy;
+class = {
+  cp-id     = 'class_candidats';
+  cp-name   = 'Candidats';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_candidats_1accd7f4aa75c1b102a54a556ee7aa77f6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Candidats';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'maxim';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Candidats.h';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre 'maxim' > 0.
+@post S'ha inicialitzat el candidat.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8h_1a57b5212577f4fe4d3b077b6b06527d8f';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'a_maxim';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8h_1ade5f1e814c267d44c8980c6fa718491c';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'iCan';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_candidats_1afd756250ad98135ef7988ab84e16e050';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'seguent';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Candidats.h';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Passa al següent candidat.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8h_1ade5f1e814c267d44c8980c6fa718491c';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'iCan';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'Solucionador::backtrackingMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1ab7047ba77455e191bce6049df4e9d3c2';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'Solucionador::backtrackingUna';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_candidats_1a69bd68ac03663d4c55822e9314dd2fc8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'actual';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Candidats.h';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Retorna el candidat actual.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8h_1ade5f1e814c267d44c8980c6fa718491c';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'iCan';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'Solucio::acceptable';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1abe2cb23b9cf6c471aeb17f44a774eec1';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'Solucio::anotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1af2170a9a52a0fe028b149fa6b4e25c22';
+        sec-mem-ref-line = '91';
+        sec-mem-ref-name = 'Solucio::desanotarCandidat';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_candidats_1afa7c56676a8c4f433c77f661600b35c8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'esFi';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Candidats.h';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Retorna TRUE si ja no queden candidats.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8h_1a57b5212577f4fe4d3b077b6b06527d8f';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'a_maxim';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8h_1ade5f1e814c267d44c8980c6fa718491c';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'iCan';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'Solucionador::backtrackingMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1ab7047ba77455e191bce6049df4e9d3c2';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'Solucionador::backtrackingUna';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_candidats_1ade5f1e814c267d44c8980c6fa718491c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'iCan';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Candidats.h';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+És el valor actual del candidat. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_candidats_8cpp_1accd7f4aa75c1b102a54a556ee7aa77f6';
+        sec-mem-ref-line = '7';
+        sec-mem-ref-name = 'Candidats';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_candidats_8cpp_1afd756250ad98135ef7988ab84e16e050';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'seguent';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_candidats_8cpp_1a69bd68ac03663d4c55822e9314dd2fc8';
+        sec-mem-ref-line = '18';
+        sec-mem-ref-name = 'actual';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_candidats_8cpp_1afa7c56676a8c4f433c77f661600b35c8';
+        sec-mem-ref-line = '23';
+        sec-mem-ref-name = 'esFi';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_candidats_1a57b5212577f4fe4d3b077b6b06527d8f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'a_maxim';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Candidats.h';
+      sec-mem-desc-line = '42';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+És el valor màxim que pot prendre el candidat. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_candidats_8cpp_1accd7f4aa75c1b102a54a556ee7aa77f6';
+        sec-mem-ref-line = '7';
+        sec-mem-ref-name = 'Candidats';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_candidats_8cpp_1afa7c56676a8c4f433c77f661600b35c8';
+        sec-mem-ref-line = '23';
+        sec-mem-ref-name = 'esFi';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Candidats.h';
+  cp-fileline  = '12';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Permet getionar el conjunt de candidats.
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'int';
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'Candidats';
+        node-link = {
+          node-link-id = 'class_candidats';
+        };
+        node-child = {
+          child-id = '2';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+iCan
+a_maxim
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_solucio';
+  cp-name   = 'Solucio';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucio_1a83a8a2881f78b7e406761e532d23f2a6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Solucio';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post S'ha creat una solució buida.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucio_1a1eec4b2e9df961351c665ee42e72bb89';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Solucio';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ifstream &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'fin';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'alcada_max';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'trobarMillor';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '34';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param fin És el fitxer d'entrada a partir del qual es crea la solució inicial.
+@param alcada_max Indica l'edifici més alt que podrem utilitzar en aquesta solució.
+@param trobarMillor Indica si s'ha de preparar la solució per trobar millor solució.
+@pre  Cert.
+@post S'ha creat una solució inicial a partir del fitxer 'fin' i els paràmetres 'alcada_max' i 'trobarMillor'.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a8723b0d2138931692e4e9fd446d9734c';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'aColumnes';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a47bcb20085c64b131dcd518442edd00c';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'aFiles';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a72776ca31f9452f498ef0f527a19c631';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'alcada_total';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a4d080ec896837ac9a5effa626ea92d3f';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'alcades';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1ac32e805fb030ca867d01691e41f15f53';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'aMax';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1ae368c9ae97f900cef03c64269a422f12';
+        sec-mem-ref-line = '207';
+        sec-mem-ref-name = 'calcularMatriuSumes';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a51bdf126d3d8c0c1aa67b775585ee1f8';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'mida';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1ac6ca6e24b91e41bd6c3c13426be0335c';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'nivell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1aacb93dc73ad1e901abaee0817c346937';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'sol';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a6200c1bddbbd617d688519a939747f5b';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'vE';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a5f5be83b0c9ef561d719a933ba570431';
+        sec-mem-ref-line = '103';
+        sec-mem-ref-name = 'vista_N';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a2b5c72740322d922baf38ff3a915057d';
+        sec-mem-ref-line = '103';
+        sec-mem-ref-name = 'vista_W';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a9d7761f6356ce599505998e68527d9c4';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'vN';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a1a794255731d93873b4c088726d0bb22';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'vS';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a24cafe02e20753b31d64b535276dd22e';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'vW';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucio_1abe2cb23b9cf6c471aeb17f44a774eec1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'anotarCandidat';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Candidats &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'iCan';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  'iCan' és acceptable.
+@post Ha anotat el candidat 'iCan' a la solució.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a8723b0d2138931692e4e9fd446d9734c';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'aColumnes';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8cpp_1a69bd68ac03663d4c55822e9314dd2fc8';
+        sec-mem-ref-line = '18';
+        sec-mem-ref-name = 'Candidats::actual';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a47bcb20085c64b131dcd518442edd00c';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'aFiles';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a72776ca31f9452f498ef0f527a19c631';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'alcada_total';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a4d080ec896837ac9a5effa626ea92d3f';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'alcades';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a51bdf126d3d8c0c1aa67b775585ee1f8';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'mida';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1ac6ca6e24b91e41bd6c3c13426be0335c';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'nivell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1aacb93dc73ad1e901abaee0817c346937';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'sol';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a5f5be83b0c9ef561d719a933ba570431';
+        sec-mem-ref-line = '103';
+        sec-mem-ref-name = 'vista_N';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a2b5c72740322d922baf38ff3a915057d';
+        sec-mem-ref-line = '103';
+        sec-mem-ref-name = 'vista_W';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'Solucionador::backtrackingMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1ab7047ba77455e191bce6049df4e9d3c2';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'Solucionador::backtrackingUna';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucio_1af2170a9a52a0fe028b149fa6b4e25c22';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'desanotarCandidat';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Candidats &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'iCan';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '47';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  'iCan' és el darrer candidat anotat.
+@post Ha desanotat 'iCan' de la solució (l'últim candidat que s'havia anotat).
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a8723b0d2138931692e4e9fd446d9734c';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'aColumnes';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8cpp_1a69bd68ac03663d4c55822e9314dd2fc8';
+        sec-mem-ref-line = '18';
+        sec-mem-ref-name = 'Candidats::actual';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a47bcb20085c64b131dcd518442edd00c';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'aFiles';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a72776ca31f9452f498ef0f527a19c631';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'alcada_total';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a4d080ec896837ac9a5effa626ea92d3f';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'alcades';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a51bdf126d3d8c0c1aa67b775585ee1f8';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'mida';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1ac6ca6e24b91e41bd6c3c13426be0335c';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'nivell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1aacb93dc73ad1e901abaee0817c346937';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'sol';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a5f5be83b0c9ef561d719a933ba570431';
+        sec-mem-ref-line = '103';
+        sec-mem-ref-name = 'vista_N';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a2b5c72740322d922baf38ff3a915057d';
+        sec-mem-ref-line = '103';
+        sec-mem-ref-name = 'vista_W';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'Solucionador::backtrackingMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1ab7047ba77455e191bce6049df4e9d3c2';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'Solucionador::backtrackingUna';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucio_1a00e64a357a95d6645d4309d71513a380';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Candidats
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'inicialitzarCandidats';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Retorna el conjunt de candidats del nivell actual.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1ac32e805fb030ca867d01691e41f15f53';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'aMax';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'Solucionador::backtrackingMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1ab7047ba77455e191bce6049df4e9d3c2';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'Solucionador::backtrackingUna';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucio_1a4c18908503c0586d568dab5afbe2171b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'potSerMillor';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Solucio &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'opt';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '60';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  'opt' és una solució completa.
+@post Diu si la cota màxima d'aquesta solució parcial podria millorar la solució òptima 'opt'.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a72776ca31f9452f498ef0f527a19c631';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'alcada_total';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a02da702f0ee1de189cb085d14313ed80';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'matSumes';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1ac6ca6e24b91e41bd6c3c13426be0335c';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'nivell';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'Solucionador::backtrackingMillor';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucio_1a2e6647a2cb565459198b2980a388d53f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'esMillor';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Solucio &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'opt';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '66';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Aquesta solució és completa i 'opt' també ho és.
+@post Diu si aquesta solució és millor que la solució 'opt'.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a72776ca31f9452f498ef0f527a19c631';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'alcada_total';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'Solucionador::backtrackingMillor';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucio_1aace918db9fa56850d988113b24c6cd68';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'acceptable';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Candidats &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'iCan';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '72';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Diu si el candidat 'iCan' es pot afegir a aquesta solució.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a8723b0d2138931692e4e9fd446d9734c';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'aColumnes';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8cpp_1a69bd68ac03663d4c55822e9314dd2fc8';
+        sec-mem-ref-line = '18';
+        sec-mem-ref-name = 'Candidats::actual';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a47bcb20085c64b131dcd518442edd00c';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'aFiles';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a4d080ec896837ac9a5effa626ea92d3f';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'alcades';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1ac32e805fb030ca867d01691e41f15f53';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'aMax';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a51bdf126d3d8c0c1aa67b775585ee1f8';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'mida';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1ac6ca6e24b91e41bd6c3c13426be0335c';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'nivell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1aacb93dc73ad1e901abaee0817c346937';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'sol';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a6200c1bddbbd617d688519a939747f5b';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'vE';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a5f5be83b0c9ef561d719a933ba570431';
+        sec-mem-ref-line = '103';
+        sec-mem-ref-name = 'vista_N';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a2b5c72740322d922baf38ff3a915057d';
+        sec-mem-ref-line = '103';
+        sec-mem-ref-name = 'vista_W';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a9d7761f6356ce599505998e68527d9c4';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'vN';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a1a794255731d93873b4c088726d0bb22';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'vS';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a24cafe02e20753b31d64b535276dd22e';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'vW';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'Solucionador::backtrackingMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1ab7047ba77455e191bce6049df4e9d3c2';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'Solucionador::backtrackingUna';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucio_1adf12823d6437ac4bb638c9f27caf1078';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'completa';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '78';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Diu si aquesta solució és completa.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a51bdf126d3d8c0c1aa67b775585ee1f8';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'mida';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1ac6ca6e24b91e41bd6c3c13426be0335c';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'nivell';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'Solucionador::backtrackingMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1ab7047ba77455e191bce6049df4e9d3c2';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'Solucionador::backtrackingUna';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucio_1aceda78a3c2cfee7f456c8d10e80a3e49';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mostrar';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '84';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Ha mostrat aquesta solució per pantalla.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a72776ca31f9452f498ef0f527a19c631';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'alcada_total';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a51bdf126d3d8c0c1aa67b775585ee1f8';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'mida';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1aacb93dc73ad1e901abaee0817c346937';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'sol';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a6200c1bddbbd617d688519a939747f5b';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'vE';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a9d7761f6356ce599505998e68527d9c4';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'vN';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a1a794255731d93873b4c088726d0bb22';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'vS';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a24cafe02e20753b31d64b535276dd22e';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'vW';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'main_8cpp_1a1dfeea39dabf076270426c94def1a2a2';
+        sec-mem-ref-line = '26';
+        sec-mem-ref-name = 'main';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucio_1ae368c9ae97f900cef03c64269a422f12';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'calcularMatriuSumes';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '111';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  S'acaben d'inicialitzar tots els atributs d'aquesta solució.
+@post S'ha calculat el vector 'matSumes' (que es tracta com una matriu de mida*mida). S'ha calculat tenint en compte que no hi hagi repeticions d'alçades en fila i columna.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a8723b0d2138931692e4e9fd446d9734c';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'aColumnes';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a47bcb20085c64b131dcd518442edd00c';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'aFiles';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a4d080ec896837ac9a5effa626ea92d3f';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'alcades';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1ac32e805fb030ca867d01691e41f15f53';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'aMax';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a02da702f0ee1de189cb085d14313ed80';
+        sec-mem-ref-line = '95';
+        sec-mem-ref-name = 'matSumes';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8h_1a51bdf126d3d8c0c1aa67b775585ee1f8';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'mida';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1ac6ca6e24b91e41bd6c3c13426be0335c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'nivell';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '87';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Guarda el nivell actual de la solució. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1abe2cb23b9cf6c471aeb17f44a774eec1';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'anotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1af2170a9a52a0fe028b149fa6b4e25c22';
+        sec-mem-ref-line = '91';
+        sec-mem-ref-name = 'desanotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a4c18908503c0586d568dab5afbe2171b';
+        sec-mem-ref-line = '122';
+        sec-mem-ref-name = 'potSerMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1adf12823d6437ac4bb638c9f27caf1078';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'completa';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1ac32e805fb030ca867d01691e41f15f53';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'aMax';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '88';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Guarda l'alçada màxima d'edifici que es podrà fer servir en aquesta solució. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a00e64a357a95d6645d4309d71513a380';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'inicialitzarCandidats';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1ae368c9ae97f900cef03c64269a422f12';
+        sec-mem-ref-line = '207';
+        sec-mem-ref-name = 'calcularMatriuSumes';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1a51bdf126d3d8c0c1aa67b775585ee1f8';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mida';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '89';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Guarda la mida de la solució [mida = núm.Columnes = núm.Files]. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1abe2cb23b9cf6c471aeb17f44a774eec1';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'anotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1af2170a9a52a0fe028b149fa6b4e25c22';
+        sec-mem-ref-line = '91';
+        sec-mem-ref-name = 'desanotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1adf12823d6437ac4bb638c9f27caf1078';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'completa';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aceda78a3c2cfee7f456c8d10e80a3e49';
+        sec-mem-ref-line = '194';
+        sec-mem-ref-name = 'mostrar';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1ae368c9ae97f900cef03c64269a422f12';
+        sec-mem-ref-line = '207';
+        sec-mem-ref-name = 'calcularMatriuSumes';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1a72776ca31f9452f498ef0f527a19c631';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'alcada_total';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '90';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Guarda l'alçada total de la solució, que és la suma de les alçades de tots els edificis que hi ha actualment a la solució. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1abe2cb23b9cf6c471aeb17f44a774eec1';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'anotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1af2170a9a52a0fe028b149fa6b4e25c22';
+        sec-mem-ref-line = '91';
+        sec-mem-ref-name = 'desanotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a4c18908503c0586d568dab5afbe2171b';
+        sec-mem-ref-line = '122';
+        sec-mem-ref-name = 'potSerMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a2e6647a2cb565459198b2980a388d53f';
+        sec-mem-ref-line = '127';
+        sec-mem-ref-name = 'esMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aceda78a3c2cfee7f456c8d10e80a3e49';
+        sec-mem-ref-line = '194';
+        sec-mem-ref-name = 'mostrar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1a47bcb20085c64b131dcd518442edd00c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+vector< vector< bool > >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'aFiles';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '92';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Guarda quines alçades s'han fet servir a cada FILA. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1abe2cb23b9cf6c471aeb17f44a774eec1';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'anotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1af2170a9a52a0fe028b149fa6b4e25c22';
+        sec-mem-ref-line = '91';
+        sec-mem-ref-name = 'desanotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1ae368c9ae97f900cef03c64269a422f12';
+        sec-mem-ref-line = '207';
+        sec-mem-ref-name = 'calcularMatriuSumes';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1a8723b0d2138931692e4e9fd446d9734c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+vector< vector< bool > >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'aColumnes';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '93';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Guarda quines alçades s'han fet servir a cada COLUMNA. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1abe2cb23b9cf6c471aeb17f44a774eec1';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'anotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1af2170a9a52a0fe028b149fa6b4e25c22';
+        sec-mem-ref-line = '91';
+        sec-mem-ref-name = 'desanotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1ae368c9ae97f900cef03c64269a422f12';
+        sec-mem-ref-line = '207';
+        sec-mem-ref-name = 'calcularMatriuSumes';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1a4d080ec896837ac9a5effa626ea92d3f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+vector< int >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'alcades';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '95';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Guarda la quantitat d'edificis disponibles que hi ha de cada alçada. Inicialment s'ha llegit de fitxer. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1abe2cb23b9cf6c471aeb17f44a774eec1';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'anotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1af2170a9a52a0fe028b149fa6b4e25c22';
+        sec-mem-ref-line = '91';
+        sec-mem-ref-name = 'desanotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1ae368c9ae97f900cef03c64269a422f12';
+        sec-mem-ref-line = '207';
+        sec-mem-ref-name = 'calcularMatriuSumes';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1aacb93dc73ad1e901abaee0817c346937';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+vector< int >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'sol';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '96';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Guarda la solució actual (parcial o final). Es guarda en un vector però s'interpreta com una matriu de mida*mida. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1abe2cb23b9cf6c471aeb17f44a774eec1';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'anotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1af2170a9a52a0fe028b149fa6b4e25c22';
+        sec-mem-ref-line = '91';
+        sec-mem-ref-name = 'desanotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aceda78a3c2cfee7f456c8d10e80a3e49';
+        sec-mem-ref-line = '194';
+        sec-mem-ref-name = 'mostrar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1a9d7761f6356ce599505998e68527d9c4';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+vector< int >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'vN';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '97';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+TARGET. VISTES DEL NORD. Guarda el nombre d'edificis que S'HAN DE VEURE des del NORD per cada COLUMNA. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aceda78a3c2cfee7f456c8d10e80a3e49';
+        sec-mem-ref-line = '194';
+        sec-mem-ref-name = 'mostrar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1a1a794255731d93873b4c088726d0bb22';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+vector< int >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'vS';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '98';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+TARGET. VISTES DEL SUD. Guarda el nombre d'edificis que S'HAN DE VEURE des del SUD per cada COLUMNA. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aceda78a3c2cfee7f456c8d10e80a3e49';
+        sec-mem-ref-line = '194';
+        sec-mem-ref-name = 'mostrar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1a6200c1bddbbd617d688519a939747f5b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+vector< int >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'vE';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '99';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+TARGET. VISTES DE L'EST. Guarda el nombre d'edificis que S'HAN DE VEURE des de l'EST per cada FILA. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aceda78a3c2cfee7f456c8d10e80a3e49';
+        sec-mem-ref-line = '194';
+        sec-mem-ref-name = 'mostrar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1a24cafe02e20753b31d64b535276dd22e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+vector< int >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'vW';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '100';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+TARGET. VISTES DE L'OEST. Guarda el nombre d'edificis que S'HAN DE VEURE des de l'OEST per cada FILA. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aceda78a3c2cfee7f456c8d10e80a3e49';
+        sec-mem-ref-line = '194';
+        sec-mem-ref-name = 'mostrar';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1a02da702f0ee1de189cb085d14313ed80';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+vector< int >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'matSumes';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '101';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Es genera durant el constructor, només en el cas que es vulgui preparar per trobar la millor solució. Es guarda en un vector però s'interpreta com una matriu de mida*mida. Permetrà decidir si una solució pot ser millor que una altra. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a4c18908503c0586d568dab5afbe2171b';
+        sec-mem-ref-line = '122';
+        sec-mem-ref-name = 'potSerMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1ae368c9ae97f900cef03c64269a422f12';
+        sec-mem-ref-line = '207';
+        sec-mem-ref-name = 'calcularMatriuSumes';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1a5f5be83b0c9ef561d719a933ba570431';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+vector< pair< int, vector< int > > >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'vista_N';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '103';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+PARCIAL. Guarda, per cada columna, el nombre d'edificis que es veuen ACTUALMENT des del NORD (al first del pair) i un vector que es fa servir com a pila que guarda al final de tot l'alçada de l'edifici més alt que es veu des del NORD (al second del pair). 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1abe2cb23b9cf6c471aeb17f44a774eec1';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'anotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1af2170a9a52a0fe028b149fa6b4e25c22';
+        sec-mem-ref-line = '91';
+        sec-mem-ref-name = 'desanotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucio_1a2b5c72740322d922baf38ff3a915057d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+vector< pair< int, vector< int > > >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'vista_W';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+      sec-mem-desc-line = '104';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+PARCIAL. Guarda, per cada fila, el nombre d'edificis que es veuen ACTUALMENT des de l'OEST (al first del pair) i un vector que es fa servir com a pila que guarda al final de tot l'alçada de l'edifici més alt que es veu des de l'OEST (al second del pair). 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1a1eec4b2e9df961351c665ee42e72bb89';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Solucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1abe2cb23b9cf6c471aeb17f44a774eec1';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'anotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1af2170a9a52a0fe028b149fa6b4e25c22';
+        sec-mem-ref-line = '91';
+        sec-mem-ref-name = 'desanotarCandidat';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'acceptable';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+  cp-fileline  = '19';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Permet gestionar la solució del problema.
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 3;
+        node-label = 'vector< pair< int, vector< int > > >';
+      }; /* node */
+      node = {
+        node-id    = 4;
+        node-label = 'int';
+      }; /* node */
+      node = {
+        node-id    = 5;
+        node-label = 'vector< int >';
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'vector< vector< bool > >';
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'Solucio';
+        node-link = {
+          node-link-id = 'class_solucio';
+        };
+        node-child = {
+          child-id = '2';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+aColumnes
+aFiles
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '3';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+vista_W
+vista_N
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '4';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+aMax
+alcada_total
+mida
+nivell
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '5';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+vE
+vW
+matSumes
+sol
+vN
+alcades
+vS
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_solucionador';
+  cp-name   = 'Solucionador';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucionador_1a2066e2b9289f31a666d7360072af6824';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Solucionador';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post S'ha creat un solucionador buit.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucionador_1a189d7ab19568a4da549d9b8e8694e43b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'solucionarUna';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Solucio &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'inicial';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  'inicial' és una solució construida per paràmetres (no és buida).
+@post Diu si la solució 'inicial' té alguna solució.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8cpp_1ab7047ba77455e191bce6049df4e9d3c2';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'backtrackingUna';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1a587006540d8bfa558aad1e3d147b2c65';
+        sec-mem-ref-line = '62';
+        sec-mem-ref-name = 'encertat';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1ab9070154905cb361553d5659a84b886e';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'solAct';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1a6574480b19395f21f54e905ae80bc3b1';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 't1';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1a2e2c5797830bb5854603bd194cc912b1';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 't2';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'main_8cpp_1a1dfeea39dabf076270426c94def1a2a2';
+        sec-mem-ref-line = '26';
+        sec-mem-ref-name = 'main';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucionador_1a662660418eea025be73390e061d744cc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'solucionarMillor';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Solucio &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'inicial';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Ha trobat la millor solució possible.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'backtrackingMillor';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1ab9070154905cb361553d5659a84b886e';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'solAct';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1a11bc956d51e901362f49d6765a9cc3ac';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'solOpt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1a6574480b19395f21f54e905ae80bc3b1';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 't1';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1a2e2c5797830bb5854603bd194cc912b1';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 't2';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'main_8cpp_1a1dfeea39dabf076270426c94def1a2a2';
+        sec-mem-ref-line = '26';
+        sec-mem-ref-name = 'main';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucionador_1afd70f11e75131ee1c83ab40c26c30afe';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Solucio
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_UnaSolucio';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '44';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Retorna la primera solució que hagi trobat.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1ab9070154905cb361553d5659a84b886e';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'solAct';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'main_8cpp_1a1dfeea39dabf076270426c94def1a2a2';
+        sec-mem-ref-line = '26';
+        sec-mem-ref-name = 'main';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucionador_1a7df7e306414efd87f674a92e245c4a24';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Solucio
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_MillorSolucio';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '50';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Retorna la millor solució.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1a11bc956d51e901362f49d6765a9cc3ac';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'solOpt';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'main_8cpp_1a1dfeea39dabf076270426c94def1a2a2';
+        sec-mem-ref-line = '26';
+        sec-mem-ref-name = 'main';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucionador_1acb086757f1f206b64ba84b7b863931cc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_time';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Retorna el temps d'execució del backtracking.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1a6574480b19395f21f54e905ae80bc3b1';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 't1';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1a2e2c5797830bb5854603bd194cc912b1';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 't2';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'main_8cpp_1a1dfeea39dabf076270426c94def1a2a2';
+        sec-mem-ref-line = '26';
+        sec-mem-ref-name = 'main';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucionador_1ab7047ba77455e191bce6049df4e9d3c2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'backtrackingUna';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '72';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Ha trobat una solució (si n'hi ha alguna) fent backtracking.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'Solucio::acceptable';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1abe2cb23b9cf6c471aeb17f44a774eec1';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'Solucio::anotarCandidat';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1adf12823d6437ac4bb638c9f27caf1078';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'Solucio::completa';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1af2170a9a52a0fe028b149fa6b4e25c22';
+        sec-mem-ref-line = '91';
+        sec-mem-ref-name = 'Solucio::desanotarCandidat';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1a587006540d8bfa558aad1e3d147b2c65';
+        sec-mem-ref-line = '62';
+        sec-mem-ref-name = 'encertat';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8cpp_1afa7c56676a8c4f433c77f661600b35c8';
+        sec-mem-ref-line = '23';
+        sec-mem-ref-name = 'Candidats::esFi';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1a00e64a357a95d6645d4309d71513a380';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'Solucio::inicialitzarCandidats';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8cpp_1afd756250ad98135ef7988ab84e16e050';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'Candidats::seguent';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1ab9070154905cb361553d5659a84b886e';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'solAct';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a189d7ab19568a4da549d9b8e8694e43b';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'solucionarUna';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_solucionador_1a7e215be6d45cf577cf7d6fd9c37df91d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'backtrackingMillor';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '78';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Ha trobat la millor solució possible fent backtracking.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1aace918db9fa56850d988113b24c6cd68';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'Solucio::acceptable';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1abe2cb23b9cf6c471aeb17f44a774eec1';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'Solucio::anotarCandidat';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'backtrackingMillor';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1adf12823d6437ac4bb638c9f27caf1078';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'Solucio::completa';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1af2170a9a52a0fe028b149fa6b4e25c22';
+        sec-mem-ref-line = '91';
+        sec-mem-ref-name = 'Solucio::desanotarCandidat';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8cpp_1afa7c56676a8c4f433c77f661600b35c8';
+        sec-mem-ref-line = '23';
+        sec-mem-ref-name = 'Candidats::esFi';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1a2e6647a2cb565459198b2980a388d53f';
+        sec-mem-ref-line = '127';
+        sec-mem-ref-name = 'Solucio::esMillor';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1a00e64a357a95d6645d4309d71513a380';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'Solucio::inicialitzarCandidats';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucio_8cpp_1a4c18908503c0586d568dab5afbe2171b';
+        sec-mem-ref-line = '122';
+        sec-mem-ref-name = 'Solucio::potSerMillor';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_candidats_8cpp_1afd756250ad98135ef7988ab84e16e050';
+        sec-mem-ref-line = '13';
+        sec-mem-ref-name = 'Candidats::seguent';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1ab9070154905cb361553d5659a84b886e';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'solAct';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_solucionador_8h_1a11bc956d51e901362f49d6765a9cc3ac';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'solOpt';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'backtrackingMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a662660418eea025be73390e061d744cc';
+        sec-mem-ref-line = '22';
+        sec-mem-ref-name = 'solucionarMillor';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucionador_1ab9070154905cb361553d5659a84b886e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Solucio
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'solAct';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '59';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Guarda la solució parcial actual. En el cas de voler trobar UNA única solució també guardarà la solució final trobada. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a189d7ab19568a4da549d9b8e8694e43b';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'solucionarUna';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a662660418eea025be73390e061d744cc';
+        sec-mem-ref-line = '22';
+        sec-mem-ref-name = 'solucionarMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1afd70f11e75131ee1c83ab40c26c30afe';
+        sec-mem-ref-line = '32';
+        sec-mem-ref-name = 'get_UnaSolucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1ab7047ba77455e191bce6049df4e9d3c2';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'backtrackingUna';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'backtrackingMillor';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucionador_1a11bc956d51e901362f49d6765a9cc3ac';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Solucio
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'solOpt';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '60';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Guarda la solució completa més òptima. Només s'usa si es vol trobar la MILLOR solució. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a662660418eea025be73390e061d744cc';
+        sec-mem-ref-line = '22';
+        sec-mem-ref-name = 'solucionarMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7df7e306414efd87f674a92e245c4a24';
+        sec-mem-ref-line = '37';
+        sec-mem-ref-name = 'get_MillorSolucio';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a7e215be6d45cf577cf7d6fd9c37df91d';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'backtrackingMillor';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucionador_1a587006540d8bfa558aad1e3d147b2c65';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'encertat';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '62';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+És TRUE quan es troba una solució. Només s'usa pel cas de voler trobar UNA única solució. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a189d7ab19568a4da549d9b8e8694e43b';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'solucionarUna';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1ab7047ba77455e191bce6049df4e9d3c2';
+        sec-mem-ref-line = '47';
+        sec-mem-ref-name = 'backtrackingUna';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucionador_1a6574480b19395f21f54e905ae80bc3b1';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+high_resolution_clock::time_point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 't1';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '64';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Guarda el moment d'inici del backtracking. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a189d7ab19568a4da549d9b8e8694e43b';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'solucionarUna';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a662660418eea025be73390e061d744cc';
+        sec-mem-ref-line = '22';
+        sec-mem-ref-name = 'solucionarMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1acb086757f1f206b64ba84b7b863931cc';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'get_time';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_solucionador_1a2e2c5797830bb5854603bd194cc912b1';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+high_resolution_clock::time_point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 't2';
+      sec-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+      sec-mem-desc-line = '65';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Guarda el moment d'acabament del backtracking. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a189d7ab19568a4da549d9b8e8694e43b';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'solucionarUna';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1a662660418eea025be73390e061d744cc';
+        sec-mem-ref-line = '22';
+        sec-mem-ref-name = 'solucionarMillor';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_solucionador_8cpp_1acb086757f1f206b64ba84b7b863931cc';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'get_time';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+  cp-fileline  = '18';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Permet resoldre el problema de trobar una solució i el de trobar la millor solució, fent servir backtracking. També calcula el temps que tarda a executar cada un d'aquests algorísmes.
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 5;
+        node-label = 'vector< pair< int, vector< int > > >';
+      }; /* node */
+      node = {
+        node-id    = 8;
+        node-label = 'time_point';
+      }; /* node */
+      node = {
+        node-id    = 6;
+        node-label = 'int';
+      }; /* node */
+      node = {
+        node-id    = 7;
+        node-label = 'vector< int >';
+      }; /* node */
+      node = {
+        node-id    = 4;
+        node-label = 'vector< vector< bool > >';
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'Solucionador';
+        node-link = {
+          node-link-id = 'class_solucionador';
+        };
+        node-child = {
+          child-id = '2';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+encertat
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '3';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+solAct
+solOpt
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '8';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+t1
+t2
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'bool';
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'Solucio';
+        node-link = {
+          node-link-id = 'class_solucio';
+        };
+        node-child = {
+          child-id = '4';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+aColumnes
+aFiles
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '5';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+vista_W
+vista_N
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '6';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+aMax
+alcada_total
+mida
+nivell
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '7';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+vE
+vW
+matSumes
+sol
+vN
+alcades
+vS
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+file = {
+  file-id   = '_candidats_8cpp';
+  file-name = 'Candidats.cpp';
+  file-full-name  = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Candidats.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_candidats_8h';
+  file-name = 'Candidats.h';
+  file-full-name  = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Candidats.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'main_8cpp';
+  file-name = 'main.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'main_8cpp_1ac264e2a673397b3e4d070b625f8e4330';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'mostrarAjuda';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'opcio';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/main.cpp';
+      func-mem-desc-line = '112';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post Mostra ajuda per pantalla.
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'main_8cpp_1a1dfeea39dabf076270426c94def1a2a2';
+        func-mem-ref-line = '26';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'main_8cpp_1a1dfeea39dabf076270426c94def1a2a2';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argn';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char **
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argv';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/main.cpp';
+      func-mem-desc-line = '26';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@pre  Cert.
+@post S'ha executat el programa principal d'acord amb els paràmetres entrats.
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = '_solucionador_8cpp_1a7df7e306414efd87f674a92e245c4a24';
+        func-mem-ref-line = '37';
+        func-mem-ref-name = 'Solucionador::get_MillorSolucio';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = '_solucionador_8cpp_1acb086757f1f206b64ba84b7b863931cc';
+        func-mem-ref-line = '42';
+        func-mem-ref-name = 'Solucionador::get_time';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = '_solucionador_8cpp_1afd70f11e75131ee1c83ab40c26c30afe';
+        func-mem-ref-line = '32';
+        func-mem-ref-name = 'Solucionador::get_UnaSolucio';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = '_solucio_8cpp_1aceda78a3c2cfee7f456c8d10e80a3e49';
+        func-mem-ref-line = '194';
+        func-mem-ref-name = 'Solucio::mostrar';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'main_8cpp_1ac264e2a673397b3e4d070b625f8e4330';
+        func-mem-ref-line = '112';
+        func-mem-ref-name = 'mostrarAjuda';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = '_solucionador_8cpp_1a662660418eea025be73390e061d744cc';
+        func-mem-ref-line = '22';
+        func-mem-ref-name = 'Solucionador::solucionarMillor';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = '_solucionador_8cpp_1a189d7ab19568a4da549d9b8e8694e43b';
+        func-mem-ref-line = '9';
+        func-mem-ref-name = 'Solucionador::solucionarUna';
+    };
+    }; /* func-member */
+    };
+  file-full-name  = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/main.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_solucio_8cpp';
+  file-name = 'Solucio.cpp';
+  file-full-name  = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_solucio_8h';
+  file-name = 'Solucio.h';
+  file-full-name  = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucio.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_solucionador_8cpp';
+  file-name = 'Solucionador.cpp';
+  file-full-name  = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_solucionador_8h';
+  file-name = 'Solucionador.h';
+  file-full-name  = 'C:/Users/vilad/OneDrive - campus.udg.edu/Documents [UdG-GEINF]/2019-2020/EDA [P.Inf]/_PRACTICA LLARGA 2_/Solucionador.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */

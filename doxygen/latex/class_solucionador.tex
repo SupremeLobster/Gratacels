@@ -1,0 +1,328 @@
+\hypertarget{class_solucionador}{}\doxysection{Solucionador Class Reference}
+\label{class_solucionador}\index{Solucionador@{Solucionador}}
+
+
+{\ttfamily \#include $<$Solucionador.\+h$>$}
+
+
+
+Collaboration diagram for Solucionador\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucionador__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solucionador_a2066e2b9289f31a666d7360072af6824}{Solucionador}} ()
+\item 
+bool \mbox{\hyperlink{class_solucionador_a189d7ab19568a4da549d9b8e8694e43b}{solucionar\+Una}} (const \mbox{\hyperlink{class_solucio}{Solucio}} \&inicial)
+\item 
+void \mbox{\hyperlink{class_solucionador_a662660418eea025be73390e061d744cc}{solucionar\+Millor}} (const \mbox{\hyperlink{class_solucio}{Solucio}} \&inicial)
+\item 
+\mbox{\hyperlink{class_solucio}{Solucio}} \mbox{\hyperlink{class_solucionador_afd70f11e75131ee1c83ab40c26c30afe}{get\+\_\+\+Una\+Solucio}} () const
+\item 
+\mbox{\hyperlink{class_solucio}{Solucio}} \mbox{\hyperlink{class_solucionador_a7df7e306414efd87f674a92e245c4a24}{get\+\_\+\+Millor\+Solucio}} () const
+\item 
+double \mbox{\hyperlink{class_solucionador_acb086757f1f206b64ba84b7b863931cc}{get\+\_\+time}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_solucionador_ab7047ba77455e191bce6049df4e9d3c2}{backtracking\+Una}} ()
+\item 
+void \mbox{\hyperlink{class_solucionador_a7e215be6d45cf577cf7d6fd9c37df91d}{backtracking\+Millor}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solucio}{Solucio}} \mbox{\hyperlink{class_solucionador_ab9070154905cb361553d5659a84b886e}{sol\+Act}}
+\item 
+\mbox{\hyperlink{class_solucio}{Solucio}} \mbox{\hyperlink{class_solucionador_a11bc956d51e901362f49d6765a9cc3ac}{sol\+Opt}}
+\item 
+bool \mbox{\hyperlink{class_solucionador_a587006540d8bfa558aad1e3d147b2c65}{encertat}}
+\item 
+high\+\_\+resolution\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{class_solucionador_a6574480b19395f21f54e905ae80bc3b1}{t1}}
+\item 
+high\+\_\+resolution\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{class_solucionador_a2e2c5797830bb5854603bd194cc912b1}{t2}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Permet resoldre el problema de trobar una solució i el de trobar la millor solució, fent servir backtracking. També calcula el temps que tarda a executar cada un d\textquotesingle{}aquests algorísmes. 
+
+Definition at line 17 of file Solucionador.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_solucionador_a2066e2b9289f31a666d7360072af6824}\label{class_solucionador_a2066e2b9289f31a666d7360072af6824}} 
+\index{Solucionador@{Solucionador}!Solucionador@{Solucionador}}
+\index{Solucionador@{Solucionador}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{Solucionador()}{Solucionador()}}
+{\footnotesize\ttfamily Solucionador\+::\+Solucionador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha creat un solucionador buit. 
+\end{DoxyPostcond}
+
+
+Definition at line 7 of file Solucionador.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_solucionador_a7e215be6d45cf577cf7d6fd9c37df91d}\label{class_solucionador_a7e215be6d45cf577cf7d6fd9c37df91d}} 
+\index{Solucionador@{Solucionador}!backtrackingMillor@{backtrackingMillor}}
+\index{backtrackingMillor@{backtrackingMillor}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{backtrackingMillor()}{backtrackingMillor()}}
+{\footnotesize\ttfamily void Solucionador\+::backtracking\+Millor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ha trobat la millor solució possible fent backtracking. 
+\end{DoxyPostcond}
+
+
+Definition at line 69 of file Solucionador.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucionador_a7e215be6d45cf577cf7d6fd9c37df91d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucionador_a7e215be6d45cf577cf7d6fd9c37df91d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucionador_ab7047ba77455e191bce6049df4e9d3c2}\label{class_solucionador_ab7047ba77455e191bce6049df4e9d3c2}} 
+\index{Solucionador@{Solucionador}!backtrackingUna@{backtrackingUna}}
+\index{backtrackingUna@{backtrackingUna}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{backtrackingUna()}{backtrackingUna()}}
+{\footnotesize\ttfamily void Solucionador\+::backtracking\+Una (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ha trobat una solució (si n\textquotesingle{}hi ha alguna) fent backtracking. 
+\end{DoxyPostcond}
+
+
+Definition at line 47 of file Solucionador.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucionador_ab7047ba77455e191bce6049df4e9d3c2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucionador_ab7047ba77455e191bce6049df4e9d3c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucionador_a7df7e306414efd87f674a92e245c4a24}\label{class_solucionador_a7df7e306414efd87f674a92e245c4a24}} 
+\index{Solucionador@{Solucionador}!get\_MillorSolucio@{get\_MillorSolucio}}
+\index{get\_MillorSolucio@{get\_MillorSolucio}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{get\_MillorSolucio()}{get\_MillorSolucio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solucio}{Solucio}} Solucionador\+::get\+\_\+\+Millor\+Solucio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna la millor solució. 
+\end{DoxyPostcond}
+
+
+Definition at line 37 of file Solucionador.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{class_solucionador_a7df7e306414efd87f674a92e245c4a24_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucionador_acb086757f1f206b64ba84b7b863931cc}\label{class_solucionador_acb086757f1f206b64ba84b7b863931cc}} 
+\index{Solucionador@{Solucionador}!get\_time@{get\_time}}
+\index{get\_time@{get\_time}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{get\_time()}{get\_time()}}
+{\footnotesize\ttfamily double Solucionador\+::get\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el temps d\textquotesingle{}execució del backtracking. 
+\end{DoxyPostcond}
+
+
+Definition at line 42 of file Solucionador.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_solucionador_acb086757f1f206b64ba84b7b863931cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucionador_afd70f11e75131ee1c83ab40c26c30afe}\label{class_solucionador_afd70f11e75131ee1c83ab40c26c30afe}} 
+\index{Solucionador@{Solucionador}!get\_UnaSolucio@{get\_UnaSolucio}}
+\index{get\_UnaSolucio@{get\_UnaSolucio}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{get\_UnaSolucio()}{get\_UnaSolucio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solucio}{Solucio}} Solucionador\+::get\+\_\+\+Una\+Solucio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna la primera solució que hagi trobat. 
+\end{DoxyPostcond}
+
+
+Definition at line 32 of file Solucionador.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_solucionador_afd70f11e75131ee1c83ab40c26c30afe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucionador_a662660418eea025be73390e061d744cc}\label{class_solucionador_a662660418eea025be73390e061d744cc}} 
+\index{Solucionador@{Solucionador}!solucionarMillor@{solucionarMillor}}
+\index{solucionarMillor@{solucionarMillor}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{solucionarMillor()}{solucionarMillor()}}
+{\footnotesize\ttfamily void Solucionador\+::solucionar\+Millor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_solucio}{Solucio}} \&}]{inicial }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ha trobat la millor solució possible. 
+\end{DoxyPostcond}
+
+
+Definition at line 22 of file Solucionador.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucionador_a662660418eea025be73390e061d744cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_solucionador_a662660418eea025be73390e061d744cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solucionador_a189d7ab19568a4da549d9b8e8694e43b}\label{class_solucionador_a189d7ab19568a4da549d9b8e8694e43b}} 
+\index{Solucionador@{Solucionador}!solucionarUna@{solucionarUna}}
+\index{solucionarUna@{solucionarUna}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{solucionarUna()}{solucionarUna()}}
+{\footnotesize\ttfamily bool Solucionador\+::solucionar\+Una (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_solucio}{Solucio}} \&}]{inicial }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+\textquotesingle{}inicial\textquotesingle{} és una solució construida per paràmetres (no és buida). 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Diu si la solució \textquotesingle{}inicial\textquotesingle{} té alguna solució. 
+\end{DoxyPostcond}
+
+
+Definition at line 9 of file Solucionador.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solucionador_a189d7ab19568a4da549d9b8e8694e43b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_solucionador_a189d7ab19568a4da549d9b8e8694e43b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_solucionador_a587006540d8bfa558aad1e3d147b2c65}\label{class_solucionador_a587006540d8bfa558aad1e3d147b2c65}} 
+\index{Solucionador@{Solucionador}!encertat@{encertat}}
+\index{encertat@{encertat}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{encertat}{encertat}}
+{\footnotesize\ttfamily bool Solucionador\+::encertat\hspace{0.3cm}{\ttfamily [private]}}
+
+És T\+R\+UE quan es troba una solució. Només s\textquotesingle{}usa pel cas de voler trobar U\+NA única solució. 
+
+Definition at line 62 of file Solucionador.\+h.
+
+\mbox{\Hypertarget{class_solucionador_ab9070154905cb361553d5659a84b886e}\label{class_solucionador_ab9070154905cb361553d5659a84b886e}} 
+\index{Solucionador@{Solucionador}!solAct@{solAct}}
+\index{solAct@{solAct}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{solAct}{solAct}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solucio}{Solucio}} Solucionador\+::sol\+Act\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda la solució parcial actual. En el cas de voler trobar U\+NA única solució també guardarà la solució final trobada. 
+
+Definition at line 59 of file Solucionador.\+h.
+
+\mbox{\Hypertarget{class_solucionador_a11bc956d51e901362f49d6765a9cc3ac}\label{class_solucionador_a11bc956d51e901362f49d6765a9cc3ac}} 
+\index{Solucionador@{Solucionador}!solOpt@{solOpt}}
+\index{solOpt@{solOpt}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{solOpt}{solOpt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_solucio}{Solucio}} Solucionador\+::sol\+Opt\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda la solució completa més òptima. Només s\textquotesingle{}usa si es vol trobar la M\+I\+L\+L\+OR solució. 
+
+Definition at line 59 of file Solucionador.\+h.
+
+\mbox{\Hypertarget{class_solucionador_a6574480b19395f21f54e905ae80bc3b1}\label{class_solucionador_a6574480b19395f21f54e905ae80bc3b1}} 
+\index{Solucionador@{Solucionador}!t1@{t1}}
+\index{t1@{t1}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{t1}{t1}}
+{\footnotesize\ttfamily high\+\_\+resolution\+\_\+clock\+::time\+\_\+point Solucionador\+::t1\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda el moment d\textquotesingle{}inici del backtracking. 
+
+Definition at line 64 of file Solucionador.\+h.
+
+\mbox{\Hypertarget{class_solucionador_a2e2c5797830bb5854603bd194cc912b1}\label{class_solucionador_a2e2c5797830bb5854603bd194cc912b1}} 
+\index{Solucionador@{Solucionador}!t2@{t2}}
+\index{t2@{t2}!Solucionador@{Solucionador}}
+\doxysubsubsection{\texorpdfstring{t2}{t2}}
+{\footnotesize\ttfamily high\+\_\+resolution\+\_\+clock\+::time\+\_\+point Solucionador\+::t2\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda el moment d\textquotesingle{}acabament del backtracking. 
+
+Definition at line 64 of file Solucionador.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_solucionador_8h}{Solucionador.\+h}}\item 
+\mbox{\hyperlink{_solucionador_8cpp}{Solucionador.\+cpp}}\end{DoxyCompactItemize}

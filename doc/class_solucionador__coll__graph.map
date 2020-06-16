@@ -1,0 +1,10 @@
+<map id="Solucionador" name="Solucionador">
+<area shape="rect" id="node1" title=" " alt="" coords="255,301,353,328"/>
+<area shape="rect" id="node2" title=" " alt="" coords="198,197,245,224"/>
+<area shape="rect" id="node3" href="$class_solucio.html" title=" " alt="" coords="270,197,335,224"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,13,168,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="192,5,315,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="339,13,378,39"/>
+<area shape="rect" id="node7" title=" " alt="" coords="407,13,502,39"/>
+<area shape="rect" id="node8" title=" " alt="" coords="360,197,443,224"/>
+</map>

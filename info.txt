@@ -1,0 +1,99 @@
+Estil similar al sudoku.
+Si estem a la ultima columna o la ultima fila s'ha de complir totes les visibilitats.
+Acceptable: 
+	- Ha de complir que no hi hagin en la columna i la fila de la mateixa altura. 
+	- Ha de complir amb la visibilitat de la columna i la fila (Nord,sud,est,oest)
+Completa:
+	(Matriu 4x4) -> 16 final -> nivell==16 (maxCaselles)
+	vector<int> caselles (16);
+	int *caselles = new int[16];
+	
+Quantitat de cada edifici:
+	Candidats: 
+		Alçada: 1 2 3 4 5 6
+		Num: 	4 5 5 6 3 5
+		
+	Com a candidat agafarem com si tinguessim un candidat de cada
+	
+		Alçada: 1 2 3 4 5 6
+		Num:	1 1 1 1 1 1
+		
+Pot ser millor (Solucio Millor):
+
+	**Aquesta proposta no es perfecte, es pot millorar bastant.
+	**En aquest exemple no es contempla la repeticio en files i columnes ni visibilitat	
+
+	Alçada: 1 2 3 4 5 6
+	Num: 	4 5 5 6 3 5
+
+	Millor solucio (suma total): 68
+
+	Posem en ordre descendent tots els edifics un rere l'altre sense tenir en compte visibilitat.
+	Una vegada utilitzem tots els edificis de altura maxima disminuim la altura i seguim.
+	La estructura que ens hauria de quedar seria la de la matriu A. 
+	Amb la matriu A, ara treiem la primera posicio i en ordre descedent tornem a posar.
+	
+	
+	6 6 6 6				X 6 6 6				X X 6 6	
+	6 5 5 5	Matriu A		6 6 5 5 Matriu B		6 6 6 5 Matriu C
+	4 4 4 4 (sum/max: 75)		5 4 4 4	(sum/max: 72)		5 5 4 4 (sum/max: 69)
+	4 4 3 3				4 4 4 3				4 4 4 4
+
+	Si anem sumant el que ens dona de cada matriu obtindrem varis numeros que els podem 
+	posar en una matriu amb les mateixes dimensions que la original.
+
+	75 72 69 65
+	61 57 53 49
+	45 40 35 30
+	24 18 12 6
+	
+	Aquesta matriu conté els punts per podar l'abre, es a dir:
+	Si la nostra solucio conté la seguent matriu i la millor suma que tenim es 68.
+	Podem podar ja que (el que portem) + (el maxim que podem aconseguir) < 68.
+
+	(3+4+2+1+1+2) + 53 = 66 < 68
+	
+	3 4 2 1
+	1 2 x x
+	x x x x 
+	x x x x
+	
+	**Aquest metode es pot millorar tinguent en compte files i columnes sense repeticions
+	
+Proves:
+
+	./gratacels -j 2
+	
+	No existeix aquesta opcio -j
+	
+	./gratacels -h o --help
+	
+	Retorna help i acaba programa
+	
+	./gratacels
+	
+	Falten arguments
+	
+	./gratacels -u 4 g4
+	
+	Primera solucio que ha trobat:
+		- Mostrar Solucio.
+		- Mostrar Alçada total.
+		- Mostrar Temps.
+		
+	./gratacels -m g4
+	
+	Millor solucio que ha trobat:
+		- Mostrar Millor solucio.
+		- Mostrar Alçada total.
+		- Mostrar Temps.
+
+Entrega: 
+	- carpeta codi:
+		- codi .h i .cpp
+		- Makefile
+		- Test/Proves
+		- 1 document proves (README.txt)
+	- carpeta doc:
+		- index.html (doxygen)
+		- tots els files

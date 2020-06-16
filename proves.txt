@@ -1,0 +1,111 @@
+Comanda:
+./gratacels -u g4
+
+Resultat:
+No hi ha solució
+Temps: 0 segons
+
+Comentari:
+Era la primera prova. Mirava si funcionava correctament el mètode 'acceptable'.
+No funcionava correctament.
+
+
+
+Comanda:
+./gratacels -u g4
+
+Resultat:
+  1 3 2 3
+1 4 1 3 2 3
+2 3 2 4 1 2
+2 2 4 1 3 2
+3 1 3 2 4 1
+  4 2 2 1
+Alçada total: 40
+Temps: 5.6954e-05 segons
+
+Comentari:
+Primera vegada que dona resposta correcta, 
+però resulta que només funciona bé amb els fitxers d'exemple que hi ha a l'enunciat.
+El g4_2, per exemple, dona malament.
+
+
+
+Comanda:
+./gratacels -u g4_2
+
+Resultat:
+  1 2 3 2
+1 4 3 2 1 4
+4 1 2 3 4 1
+2 3 4 1 2 2
+2 2 1 4 3 2
+  3 2 1 2
+Alçada total: 40
+Temps: 5.5445e-05 segons
+
+Comentari:
+Ara ja dona sempre la resposta correcta però el temps és molt alt 
+si ho provo amb g5_7 (uns 60 segons).
+El problema és el mètode 'acceptable' que accepta massa casos.
+
+
+
+Comanda:
+./gratacels -m g4
+
+Resultat:
+  1 3 2 3
+1 4 1 3 2 3
+2 3 2 5 4 2
+2 2 6 1 3 2
+3 1 4 2 6 1
+  4 2 2 1
+Alçada total: 49
+Temps: 0.00797146 segons
+
+Comentari:
+Primera vegada que funciona bé el buscar millor solució.
+Té el mateix problema que la prova anterior.
+
+
+
+Comanda:
+./gratacels -m g5_7
+
+Resultat:
+  3 1 2 2 5
+2 5 7 6 4 1 4
+2 6 5 7 1 3 2
+1 7 6 2 3 4 3
+4 2 3 4 6 5 2
+3 4 2 3 5 6 1
+  2 4 3 2 1
+Alçada total: 107
+Temps: 52.70472 segons
+
+Comentari:
+Ara tinc en compte que no hi hagi repeticions d'alçada en fila ni columna 
+a l'hora de calcular la 'matSumes', 
+de manera que el mètode 'potSerMillor' ara és més restrictiu.
+El temps ha baixat uns 8 segons, però segueix sent molt alt.
+
+
+
+Comanda:
+./gratacels -m g5_7
+
+Resultat:
+  3 1 2 2 5
+2 5 7 6 4 1 4
+2 6 5 7 1 3 2
+1 7 6 2 3 4 3
+4 2 3 4 6 5 2
+3 4 2 3 5 6 1
+  2 4 3 2 1
+Alçada total: 107
+Temps: 5.39154 segons
+
+Comentari:
+He arreglat el problema del temps. El nou mètode 'acceptable' resol el mateix problema més de 10 vegades més ràpid.
+Ara tot funciona correctament.
